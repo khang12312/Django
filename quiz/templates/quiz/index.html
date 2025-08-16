@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Module - Django OAuth</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .quiz-content {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .quiz-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 2rem;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>🧠 Quiz Module</h1>
+        <div class="quiz-content">
+            <div class="quiz-icon">🎯</div>
+            <h2>Welcome to the Quiz Section!</h2>
+            <p>This is where your interactive quizzes will be displayed.</p>
+            <p>You can add quiz functionality, questions, and scoring here.</p>
+        </div>
+        <a href="{% url 'dashboard' %}" class="back-btn">← Back to Dashboard</a>
+    </div>
+</body>
+</html>

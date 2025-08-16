@@ -1,0 +1,2 @@
+Django==5.2.5
+social-auth-app-django==5.5.1

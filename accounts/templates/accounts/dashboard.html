@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Django OAuth</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .dashboard-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .welcome-text {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .user-info {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .option-card {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .option-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        .option-card h3 {
+            margin: 0 0 1rem 0;
+            font-size: 1.5rem;
+        }
+        .option-card p {
+            margin: 0;
+            opacity: 0.9;
+        }
+        .quiz-card {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        .courses-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+        .logout-btn {
+            display: block;
+            width: 200px;
+            margin: 2rem auto 0;
+            padding: 10px 20px;
+            background: #dc3545;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        .logout-btn:hover {
+            background: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="header">
+            <h1 class="welcome-text">Welcome, {{ user.first_name|default:user.username }}!</h1>
+            <p class="user-info">Choose an option below to get started</p>
+        </div>
+        
+        <div class="options-grid">
+            <a href="{% url 'quiz:index' %}" class="option-card quiz-card">
+                <h3>🧠 Quiz</h3>
+                <p>Test your knowledge with interactive quizzes</p>
+            </a>
+            
+            <a href="{% url 'courses:index' %}" class="option-card courses-card">
+                <h3>📚 Courses</h3>
+                <p>Explore detailed course materials and content</p>
+            </a>
+        </div>
+        
+        <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
+    </div>
+</body>
+</html>

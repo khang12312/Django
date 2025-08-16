@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Module - Django OAuth</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .courses-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .courses-content {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .courses-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 2rem;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+<body>
+    <div class="courses-container">
+        <h1>📚 Courses Module</h1>
+        <div class="courses-content">
+            <div class="courses-icon">🎓</div>
+            <h2>Welcome to the Courses Section!</h2>
+            <p>This is where your course materials and content will be displayed.</p>
+            <p>You can add course listings, details, and learning materials here.</p>
+        </div>
+        <a href="{% url 'dashboard' %}" class="back-btn">← Back to Dashboard</a>
+    </div>
+</body>
+</html>
