@@ -1,6 +1,13 @@
 # Learning Management System (Django)
 
-A comprehensive Learning Management System built with Django, designed to provide a seamless educational experience with integrated course management, quiz functionality, and user authentication.
+[![GitHub](https://img.shields.io/github/license/khang12312/Django)](https://github.com/khang12312/Django)
+[![GitHub stars](https://img.shields.io/github/stars/khang12312/Django)](https://github.com/khang12312/Django/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/khang12312/Django)](https://github.com/khang12312/Django/issues)
+
+A comprehensive Learning Management System built with Django, designed to provide a seamless educational experience with integrated course management, quiz functionality, and user authentication. This platform enables efficient course delivery, student progress tracking, and interactive quiz assessments.
+
+## 🌟 Demo
+Visit our [live demo](https://github.com/khang12312/Django) to explore the features.
 
 ## ✨ Features
 
@@ -50,7 +57,7 @@ Django/
 
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/khang12312/Django.git
    cd Django
    ```
 
@@ -114,9 +121,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Irfan Khan**
 
-- GitHub: [Your GitHub Profile]
-- LinkedIn: [Your LinkedIn Profile]
+- GitHub: [khang12312](https://github.com/khang12312)
 - Email: khangdevelopers@gmail.com
+- Project Link: [https://github.com/khang12312/Django](https://github.com/khang12312/Django)
 
 ## 📞 Support
 
